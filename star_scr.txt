@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+STAR --genomeDir /home/bi2020/genome_for_alignment/genomeDir --sjdbGTFfile /home/bi2020/genome_for_alignment/gencode.v35.primary_assembly.annotation.gtf --readFilesCommand zcat --readFilesIn /media/DISK1/RNA/alignment_ready/I_CH02787_R1_merged.fastq.gz /media/DISK1/RNA/alignment_ready/I_CH02787_R2_merged.fastq.gz  --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 16000000000 --outSAMunmapped Within --outFilterMultimapNmax 1 --quantMode TranscriptomeSAM --runThreadN 8 --outFileNamePrefix "/media/DISK1/RNA/out_10-19/I_CH02787"
+
+STAR --genomeDir /home/bi2020/genome_for_alignment/genomeDir --sjdbGTFfile /home/bi2020/genome_for_alignment/gencode.v35.primary_assembly.annotation.gtf --readFilesCommand zcat --readFilesIn /media/DISK1/RNA/alignment_ready/II_CH02787_R1_merged.fastq.gz /media/DISK1/RNA/alignment_ready/II_CH02787_R2_merged.fastq.gz  --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 16000000000 --outSAMunmapped Within --outFilterMultimapNmax 1 --quantMode TranscriptomeSAM --runThreadN 8 --outFileNamePrefix "/media/DISK1/RNA/out_10-19/II_CH02787" 
+
+STAR --genomeDir /home/bi2020/genome_for_alignment/genomeDir --sjdbGTFfile /home/bi2020/genome_for_alignment/gencode.v35.primary_assembly.annotation.gtf --readFilesCommand zcat --readFilesIn /media/DISK1/RNA/alignment_ready/III_CH02787_R1_merged.fastq.gz /media/DISK1/RNA/alignment_ready/III_CH02787_R2_merged.fastq.gz  --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 16000000000 --outSAMunmapped Within --outFilterMultimapNmax 1 --quantMode TranscriptomeSAM --runThreadN 8 --outFileNamePrefix "/media/DISK1/RNA/out_10-19/III_CH02787"
+
+
+STAR --genomeDir /home/bi2020/genome_for_alignment/genomeDir --sjdbGTFfile /home/bi2020/genome_for_alignment/gencode.v35.primary_assembly.annotation.gtf --readFilesCommand zcat --readFilesIn /media/DISK1/RNA/alignment_ready/II_CH02781_R1_merged.fastq.gz /media/DISK1/RNA/alignment_ready/II_CH02781_R2_merged.fastq.gz  --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 16000000000 --outSAMunmapped Within --outFilterMultimapNmax 1 --quantMode TranscriptomeSAM --runThreadN 8 --outFileNamePrefix "/media/DISK1/RNA/out_10-19/II_CH02781" 
+
+STAR --genomeDir /home/bi2020/genome_for_alignment/genomeDir --sjdbGTFfile /home/bi2020/genome_for_alignment/gencode.v35.primary_assembly.annotation.gtf --readFilesCommand zcat --readFilesIn /media/DISK1/RNA/alignment_ready/III_CH02781_R1_merged.fastq.gz /media/DISK1/RNA/alignment_ready/III_CH02781_R2_merged.fastq.gz  --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 16000000000 --outSAMunmapped Within --outFilterMultimapNmax 1 --quantMode TranscriptomeSAM --runThreadN 8 --outFileNamePrefix "/media/DISK1/RNA/out_10-19/III_CH02781"

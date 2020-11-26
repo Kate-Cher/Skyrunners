@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1606325579153.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2228497159",
+    "id" : "86946FF2",
+    "lastKnownWriteTime" : 1606385923,
+    "last_content_update" : 1606385923672,
+    "path" : "C:/Users/Катюша/Desktop/учеба/научка/r_project/script.r",
+    "project_path" : "script.r",
+    "properties" : {
+        "cursorPosition" : "141,0",
+        "scrollLine" : "128",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
