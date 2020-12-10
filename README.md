@@ -18,4 +18,4 @@ St. Petersburg).
 
 1. For some samples we had several pairs of reads, so this files were merged with merger.sh script.
 2. Quality of raw reads was checked using FastQC tool (version ....).
-3. For processing alignment we used STAR (version) and GENCODE reference genome Release 36 (GRCh38.p13): [gtf](ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_36/gencode.v36.primary_assembly.annotation.gtf.gz) and [fasta](ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_36/GRCh38.primary_assembly.genome.fa.gz) files.
+3. For processing alignment we used STAR (version) and GENCODE reference genome Release 36 (GRCh38.p13): [gtf](https://www.google.com) and [fasta](ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_36/GRCh38.primary_assembly.genome.fa.gz) files.
