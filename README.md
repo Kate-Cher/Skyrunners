@@ -22,15 +22,35 @@ St. Petersburg).
 
 We run following command to generate genome indexes:
 ```bash
-STAR --runThreadN 8 --runMode genomeGenerate --genomeDir /path/to/genomeDir --genomeFastaFiles /path/to/genome/fasta --sjdbGTFfile /path/to/annotations.gtf --sjdbOverhang 99
+STAR --runThreadN 8 \
+     --runMode genomeGenerate \
+     --genomeDir /path/to/genomeDir \
+     --genomeFastaFiles /path/to/genome/fasta \
+     --sjdbGTFfile /path/to/annotations.gtf \
+     --sjdbOverhang 99
 ```
 Then we run following command to process alignment:
 ```bash
-STAR --genomeDir /path/to/genomeDir --sjdbGTFfile /path/to/annotations.gtf --readFilesCommand zcat --readFilesIn /path/to/read_R1.fastq.gz /path/to/read_R2.fastq.gz  --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 16000000000 --outSAMunmapped Within --outFilterMultimapNmax 1 --quantMode TranscriptomeSAM --runThreadN 8 --outFileNamePrefix "/path/to/out/file."
+STAR --genomeDir /path/to/genomeDir \
+     --sjdbGTFfile /path/to/annotations.gtf \
+     --readFilesCommand zcat \
+     --readFilesIn /path/to/read_R1.fastq.gz /path/to/read_R2.fastq.gz  \
+     --outSAMtype BAM SortedByCoordinate \
+     --limitBAMsortRAM 16000000000 \
+     --outSAMunmapped Within \
+     --outFilterMultimapNmax 1 \
+     --quantMode TranscriptomeSAM \
+     --runThreadN 8 \
+     --outFileNamePrefix "/path/to/out/file."
 ```
 4. The most interesting file from previous step was file.Aligned.toTranscriptome.out.bam because we could count gene and isoform expression using it. We also used [RSEM](https://deweylab.github.io/RSEM/) (v1.3.3) to perform this analysis:
 ```bash
-rsem-calculate-expression --paired-end --bam --no-bam-output -p 8 /path/to/file.Aligned.toTranscriptome.out.bam /path/to/genome/index out_file_prefix
+rsem-calculate-expression --paired-end \
+                          --bam \
+                          --no-bam-output \
+                          -p 8 \
+                          /path/to/file.Aligned.toTranscriptome.out.bam \
+                          /path/to/genome/index out_file_prefix
 ```
 5. Analysis of differential expressing genes was performed in [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html) (v1.30.0) R package. We had two R-scripts: for [gene analysis](https://github.com/Kate-Cher/Skyrunners/tree/main/r_project) and for [isoform analysis]().
 6. Lists of differential expressing genes and isoforms were analysed using [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb/annotate.jsp) and [GeneQuery](https://ctlab.itmo.ru/genequery/searcher/).
