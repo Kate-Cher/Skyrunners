@@ -20,6 +20,7 @@ St. Petersburg).
 2. Quality of raw reads was checked using FastQC tool (version ....).
 3. For processing alignment we used STAR (version) and [GENCODE reference genome Release 36 (GRCh38.p13)](https://www.gencodegenes.org/human/) primary assembly. 
 
+We run following command to generate genome indexes:
 ```bash
-grep ew
+STAR --runThreadN 16 --runMode genomeGenerate --genomeDir /path/to/genomeDir --genomeFastaFiles /path/to/genome/fasta --sjdbGTFfile /path/to/annotations.gtf --sjdbOverhang 99
 ```
