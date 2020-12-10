@@ -22,5 +22,9 @@ St. Petersburg).
 
 We run following command to generate genome indexes:
 ```bash
-STAR --runThreadN 16 --runMode genomeGenerate --genomeDir /path/to/genomeDir --genomeFastaFiles /path/to/genome/fasta --sjdbGTFfile /path/to/annotations.gtf --sjdbOverhang 99
+STAR --runThreadN 8 --runMode genomeGenerate --genomeDir /path/to/genomeDir --genomeFastaFiles /path/to/genome/fasta --sjdbGTFfile /path/to/annotations.gtf --sjdbOverhang 99
+```
+Then we run following command to process alignment:
+```bash
+STAR --genomeDir /path/to/genomeDir --sjdbGTFfile /path/to/annotations.gtf --readFilesCommand zcat --readFilesIn /path/to/read_R1.fastq.gz /path/to/read_R2.fastq.gz  --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 16000000000 --outSAMunmapped Within --outFilterMultimapNmax 1 --quantMode TranscriptomeSAM --runThreadN 8 --outFileNamePrefix "/path/to/out/files"
 ```
