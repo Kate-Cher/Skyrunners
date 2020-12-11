@@ -52,7 +52,7 @@ rsem-calculate-expression --paired-end \
                           /path/to/file.Aligned.toTranscriptome.out.bam \
                           /path/to/genome/index out_file_prefix
 ```
-5. Analysis of differential expressing genes was performed in [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html) (v1.30.0) R package. We had two R-scripts: for [gene analysis](https://github.com/Kate-Cher/Skyrunners/tree/main/r_project) and for [isoform analysis]().
+5. Analysis of differential expressing genes was performed in [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html) (v1.30.0) R package. We had two R-scripts: for [gene analysis](https://github.com/Kate-Cher/Skyrunners/tree/main/r_project) and for [isoform analysis](https://github.com/Kate-Cher/Skyrunners/blob/main/isoform_difexp_analysis/dif_exp.R).
 6. Lists of differential expressing genes and isoforms were analysed using [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb/annotate.jsp) and [GeneQuery](https://ctlab.itmo.ru/genequery/searcher/).
 7. Cluster analysis was processed in [Phantasus](https://ctlab.itmo.ru/phantasus/).
 
