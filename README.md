@@ -14,6 +14,10 @@ St. Petersburg).
 5. Functional analysis of differentially expressing genes
 6. Сluster analysis
 
+## System requirements
+
+The main characteristics required for running alignment and calculating differential expression is RAM. We used a server with 32 GB of RAM.
+
 ## Materials and methods
 
 1. For some samples we had several pairs of reads, so this files were merged with [merger.sh](https://github.com/Kate-Cher/Skyrunners/blob/main/merger.sh) script.
