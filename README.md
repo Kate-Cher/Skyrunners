@@ -52,12 +52,10 @@ rsem-calculate-expression --paired-end \
                           /path/to/file.Aligned.toTranscriptome.out.bam \
                           /path/to/genome/index out_file_prefix
 ```
-5. Analysis of differential expressing genes was performed in [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html) (v1.30.0) R package. We had two R-scripts: for [gene analysis](https://github.com/Kate-Cher/Skyrunners/tree/main/r_project) and for [isoform analysis](https://github.com/Kate-Cher/Skyrunners/blob/main/isoform_difexp_analysis/dif_exp.R).
+5. Analysis of differential expressing genes was performed in [DESeq2](http://bioconductor.org/packages/release/bioc/html/DESeq2.html) (v1.30.0) R package. We had two R-scripts: for [gene analysis](https://github.com/Kate-Cher/Skyrunners/blob/main/genes_difexp_analysis/script.r) and for [isoform analysis](https://github.com/Kate-Cher/Skyrunners/blob/main/isoform_difexp_analysis/dif_exp.R).
 6. Lists of differential expressing genes and isoforms were analysed using [MSigDB](https://www.gsea-msigdb.org/gsea/msigdb/annotate.jsp) and [GeneQuery](https://ctlab.itmo.ru/genequery/searcher/).
 7. Cluster analysis was processed in [Phantasus](https://ctlab.itmo.ru/phantasus/).
 
 ## Results
 
-We compared three types of conditions in pairs and lists of differentially expressing genes were obtained. More information about functional analysis of genes lists may be found [here](дать ссылку на презентацию). Next is planned a time series analysis and donor effect correction.
-
-## References
+We compared three types of conditions in pairs and lists of differentially expressing genes were obtained. More information about functional analysis of genes lists may be found [here](https://docs.google.com/presentation/d/1EzHlLa3YpSoFgdo5eapeyzFIxL91gq_KU4ZYvp_kF3k/edit#slide=id.ga9517ca1e1_0_43). Next is planned a time series analysis and donor effect correction and also we are going to find out more about gene sets responsible for neurodegenerative diseases.
